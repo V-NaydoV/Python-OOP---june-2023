@@ -10,10 +10,10 @@ class Glass:
             return f"Glass filled with {ml} ml"
         return f"Cannot add {ml} ml"
 
-    def empty(self):
+    def empty(self) -> str:
         self.content = 0
         return "Glass is now empty"
 
-    def info(self):
+    def info(self) -> str:
         space_left = Glass.capacity - self.content
         return f"{space_left} ml left"
